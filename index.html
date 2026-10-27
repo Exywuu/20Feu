@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Le 20e Feu — Nuit d'Éveil du Hellfest 2027 (concept indépendant fictif)</title>
+<meta name="description" content="Prototype expérientiel indépendant et non officiel : « Le 20e Feu », nuit anniversaire entièrement fictive imaginée autour du Hellfest en 2027. Aucun lien avec les organisateurs réels.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 2c3 6-5 8-3 14 1 3 5 3 5-1 3 2 5 6 5 9a7 7 0 0 1-14 0c0-8 9-11 7-22z' fill='%23ff6a2b'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#contenu">Aller au contenu principal</a>
+
+<!-- Bandeau de non-officialité, présent sur tous les parcours -->
+<p class="ribbon" role="note">
+  <span aria-hidden="true">▲</span>
+  Concept indépendant et non officiel. Édition anniversaire 2027 entièrement fictive.
+</p>
+
+<header class="topbar">
+  <a class="brand" href="#accueil" aria-label="Le 20e Feu — retour à l'accueil">
+    <svg class="brand-flame" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M16 2c3 6-5 8-3 14 1 3 5 3 5-1 3 2 5 6 5 9a7 7 0 0 1-14 0c0-8 9-11 7-22z" fill="currentColor"/></svg>
+    <span class="brand-text">LE&nbsp;20<sup>e</sup>&nbsp;FEU</span>
+  </a>
+  <nav class="mainnav" aria-label="Navigation principale">
+    <a href="#descente">La Descente</a>
+    <a href="#forge">La Forge</a>
+    <a href="#guide" class="nav-guide">Le Guide</a>
+  </nav>
+  <button id="soundToggle" class="sound-btn" aria-pressed="false" aria-label="Activer l'ambiance sonore (désactivée par défaut)">
+    <span aria-hidden="true">♪</span><span class="sound-label">Son</span>
+  </button>
+</header>
+
+<main id="contenu">
+
+  <!-- ======================= ACCUEIL ======================= -->
+  <section id="accueil" class="hero" aria-labelledby="hero-title">
+    <canvas id="embersBg" aria-hidden="true"></canvas>
+    <div class="hero-inner">
+      <p class="hero-kicker">Hellfest · Val de Moine, Clisson — <strong>fiction créative</strong></p>
+      <h1 id="hero-title">LE 20<sup>e</sup> FEU<span class="hero-sub" aria-hidden="true"></span></h1>
+      <p class="hero-tagline">La nuit d'éveil d'un anniversaire inventé&nbsp;: dix-neuf feux pour dix-neuf éditions passées, et un vingtième que le public allumera ensemble.</p>
+      <p class="hero-meta">
+        <span class="badge badge-fiction">Événement fictif</span>
+        Mercredi 16 juin 2027 · 19h → 1h · Domaine du Val de Moine (lieu réel, nuit inventée)
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#descente">Entamer la Descente <span aria-hidden="true">↓</span></a>
+        <a class="btn btn-ghost" href="#guide">Accès direct au Guide</a>
+      </div>
+      <p class="hero-scrollhint" aria-hidden="true">descendre pour révéler l'univers</p>
+    </div>
+  </section>
+
+  <!-- ======================= MODE A : LA DESCENTE ======================= -->
+  <section id="descente" class="mode mode-a" aria-labelledby="descente-title">
+    <div class="section-head">
+      <p class="mode-tag">Mode A — expérience immersive principale</p>
+      <h2 id="descente-title">La Descente</h2>
+      <p class="section-lead">Au crépuscule, la vallée s'éveille. Faites défiler&nbsp;: chaque palier vous mène plus bas dans le Val, là où les feux attendent. Rien n'est bloqué&nbsp;: vous pouvez interrompre la descente à tout instant via le <a href="#guide">Guide</a>.</p>
+    </div>
+
+    <!-- Palier 1 : Le Seuil -->
+    <article class="step step-seuil reveal" aria-labelledby="step1-title">
+      <p class="step-num" aria-hidden="true">I</p>
+      <h3 id="step1-title">Le Seuil</h3>
+      <p>Il est 18&nbsp;h&nbsp;57. La file s'étire entre les peupliers, et l'odeur de terre chaude remonte du Val. On vous a remis une braise froide à l'entrée&nbsp;: elle ne s'allumera qu'en bas, dit-on, si vous la montrez aux feux.</p>
+      <p class="fiction-note">Micro-récit inventé pour le prototype.</p>
+    </article>
+
+    <!-- Palier 2 : Le Val au crépuscule -->
+    <article class="step step-val reveal" aria-labelledby="step2-title">
+      <p class="step-num" aria-hidden="true">II</p>
+      <h3 id="step2-title">Le Val au crépuscule</h3>
+      <div class="val-scene" aria-hidden="true">
+        <div class="val-layer val-sky"></div>
+        <div class="val-layer val-hills"></div>
+        <div class="val-layer val-gates"></div>
+      </div>
+      <p class="sr-only">Illustration décorative : couchant rouge sombre, collines, portail du festival en silhouette.</p>
+      <p>Vingt hectares de vallée se creusent sous vos pieds. Depuis la crête, les six scènes ne sont encore que des dents noires dans la pénombre. Ce soir, elles ne garderont pas le silence.</p>
+    </article>
+
+    <!-- Palier 3 : Les Six Feux -->
+    <article class="step step-fires reveal" aria-labelledby="step3-title">
+      <p class="step-num" aria-hidden="true">III</p>
+      <h3 id="step3-title">Les Six Feux</h3>
+      <p>Les scènes existantes du festival attendent leur étincelle. Touchez une scène pour l'allumer et découvrir la veillée qui y est imaginée.</p>
+      <p class="fiction-note">Les noms et vocations des scènes s'appuient sur le festival réel&nbsp;; toute programmation affichée est inventée.</p>
+      <div class="fires-grid" role="group" aria-label="Allumer les scènes du festival">
+        <button class="fire-card" data-fire="ms1" aria-expanded="false">
+          <span class="fire-icon" aria-hidden="true"></span>
+          <span class="fire-name">Main Stage 1</span>
+          <span class="fire-hint">Allumer</span>
+        </button>
+        <button class="fire-card" data-fire="ms2" aria-expanded="false">
+          <span class="fire-icon" aria-hidden="true"></span>
+          <span class="fire-name">Main Stage 2</span>
+          <span class="fire-hint">Allumer</span>
+        </button>
+        <button class="fire-card" data-fire="altar" aria-expanded="false">
+          <span class="fire-icon" aria-hidden="true"></span>
+          <span class="fire-name">Altar</span>
+          <span class="fire-hint">Allumer</span>
+        </button>
+        <button class="fire-card" data-fire="temple" aria-expanded="false">
+          <span class="fire-icon" aria-hidden="true"></span>
+          <span class="fire-name">Temple</span>
+          <span class="fire-hint">Allumer</span>
+        </button>
+        <button class="fire-card" data-fire="warzone" aria-expanded="false">
+          <span class="fire-icon" aria-hidden="true"></span>
+          <span class="fire-name">Warzone</span>
+          <span class="fire-hint">Allumer</span>
+        </button>
+        <button class="fire-card" data-fire="valley" aria-expanded="false">
+          <span class="fire-icon" aria-hidden="true"></span>
+          <span class="fire-name">The Valley</span>
+          <span class="fire-hint">Allumer</span>
+        </button>
+      </div>
+      <div class="fire-detail" id="fireDetail" aria-live="polite"></div>
+    </article>
+
+    <!-- Palier 4 : Les Dix-Neuf Millésimes -->
+    <article class="step step-millesimes reveal" aria-labelledby="step4-title">
+      <p class="step-num" aria-hidden="true">IV</p>
+      <h3 id="step4-title">Les Dix-Neuf Millésimes</h3>
+      <p>Le long du chemin, dix-neuf braises — une par édition passée. Touchez-en une pour entendre son écho. Certaines histoires sont réelles, la plupart sont inventées&nbsp;: chaque récit porte son étiquette.</p>
+      <ul class="ember-list" id="emberList" aria-label="Braises des éditions passées, de 2006 à 2026"></ul>
+      <div class="ember-detail" id="emberDetail" aria-live="polite">
+        <p class="ember-empty">Choisissez une braise pour révéler son souvenir.</p>
+      </div>
+    </article>
+
+    <!-- Palier 5 : Le Cœur de Braise -->
+    <article class="step step-coeur reveal" aria-labelledby="step5-title">
+      <p class="step-num" aria-hidden="true">V</p>
+      <h3 id="step5-title">Le Cœur de Braise — le 20<sup>e</sup> feu</h3>
+      <p>Au fond du Val, un brasier immense n'attend que vous. Maintenez le geste pour lui donner votre braise&nbsp;: plus le feu croît, plus la nuit s'éclaire.</p>
+      <div class="hearth">
+        <div class="flame-zone" aria-hidden="true">
+          <div class="flame-base"></div>
+          <div class="flame-core" id="flameCore"></div>
+        </div>
+        <button id="feedFlame" class="btn btn-primary feed-btn" aria-describedby="feedHint">Maintenir pour nourrir la flamme</button>
+        <p id="feedHint" class="feed-hint">Souris&nbsp;: maintenir le bouton enfoncé — clavier&nbsp;: maintenir <kbd>Espace</kbd> ou <kbd>Entrée</kbd>.</p>
+        <p class="hearth-count" aria-live="polite">Braises offertes à la Flamme Commune (compteur simulé, stocké sur votre appareil)&nbsp;: <strong id="emberCount">0</strong></p>
+      </div>
+    </article>
+
+    <!-- Fin de descente -->
+    <div class="descente-end reveal">
+      <p>Le feu est prêt. Il ne lui manque que la nuit et les mille visages qui viendront le nourrir.</p>
+      <div class="hero-actions">
+        <a class="btn btn-secondary" href="#forge">Forger votre Sceau <span aria-hidden="true">→</span></a>
+        <a class="btn btn-ghost" href="#guide">Ou passer directement au Guide</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= MODE B : LA FORGE ======================= -->
+  <section id="forge" class="mode mode-b" aria-labelledby="forge-title">
+    <div class="section-head">
+      <p class="mode-tag">Mode B — découverte par la participation</p>
+      <h2 id="forge-title">La Forge</h2>
+      <p class="section-lead">Trois choix, un sceau. La Forge grave votre braise personnelle et trace votre route de la nuit — une route inventée, évidemment.</p>
+    </div>
+
+    <form id="forgeForm" class="forge-form">
+      <fieldset class="forge-fieldset reveal">
+        <legend>1 · Devant quel feu vous tenez-vous&nbsp;?</legend>
+        <div class="choices">
+          <label><input type="radio" name="feu" value="mainstage" checked> <span>Les Main Stages</span></label>
+          <label><input type="radio" name="feu" value="altar"> <span>L'Altar</span></label>
+          <label><input type="radio" name="feu" value="temple"> <span>Le Temple</span></label>
+          <label><input type="radio" name="feu" value="valley"> <span>The Valley</span></label>
+        </div>
+      </fieldset>
+      <fieldset class="forge-fieldset reveal">
+        <legend>2 · Quelle famille de son vous emporte&nbsp;?</legend>
+        <div class="choices">
+          <label><input type="radio" name="son" value="extreme" checked> <span>L'extrême (black · death)</span></label>
+          <label><input type="radio" name="son" value="heavy"> <span>Le heavy et le groove</span></label>
+          <label><input type="radio" name="son" value="hardcore"> <span>Le punk et le hardcore</span></label>
+          <label><input type="radio" name="son" value="doom"> <span>Le doom et le stoner</span></label>
+        </div>
+      </fieldset>
+      <fieldset class="forge-fieldset reveal">
+        <legend>3 · À quel moment la nuit vous appartient&nbsp;?</legend>
+        <div class="choices">
+          <label><input type="radio" name="moment" value="crepuscule" checked> <span>Le crépuscule</span></label>
+          <label><input type="radio" name="moment" value="pleinenuit"> <span>La pleine nuit</span></label>
+          <label><input type="radio" name="moment" value="aube"> <span>Le bout de la nuit</span></label>
+        </div>
+      </fieldset>
+      <button type="submit" class="btn btn-primary">Forger mon Sceau de Braise</button>
+    </form>
+
+    <div class="forge-result" id="forgeResult" hidden aria-live="polite">
+      <h3>Votre Sceau de Braise</h3>
+      <div class="forge-output">
+        <canvas id="sigilCanvas" width="360" height="360" role="img" aria-label="Sceau de braise généré à partir de vos trois choix"></canvas>
+        <div class="forge-info">
+          <p class="sigil-code" id="sigilCode"></p>
+          <p class="sigil-desc" id="sigilDesc"></p>
+          <p class="fiction-note">Sceau généré localement dans votre navigateur, purement décoratif. Aucune donnée n'est envoyée.</p>
+          <h4>Ta route de la nuit (inventée)</h4>
+          <ol class="route-list" id="routeList"></ol>
+          <button type="button" class="btn btn-ghost" id="reforge">Reforger le sceau</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= MODE C : LE GUIDE ======================= -->
+  <section id="guide" class="mode mode-c" aria-labelledby="guide-title">
+    <div class="section-head">
+      <p class="mode-tag">Mode C — accès pratique et direct</p>
+      <h2 id="guide-title">Le Guide</h2>
+      <p class="section-lead">Toutes les informations essentielles de la nuit, sans avoir à explorer quoi que ce soit. Ce mode n'est pas une version appauvrie&nbsp;: c'est le compagnon sobre de la descente.</p>
+    </div>
+
+    <div class="guide-grid">
+
+      <article class="guide-card reveal" aria-labelledby="g-event">
+        <h3 id="g-event">L'événement (fictif)</h3>
+        <p><strong>« Le 20e Feu — Nuit d'Éveil »</strong> est une soirée anniversaire <em>inventée</em> pour ce prototype&nbsp;: la veille d'une 20<sup>e</sup> édition elle-même célébrée ici de façon fictive.</p>
+        <ul class="fact-list">
+          <li><span class="badge badge-fiction">Fictif</span> Mercredi 16 juin 2027, 19h → 1h</li>
+          <li><span class="badge badge-real">Réel</span> Le lieu&nbsp;: le festival réel se tient à Clisson (Val de Moine), en juin — « Since 2006 » d'après le site officiel.</li>
+          <li><span class="badge badge-real">Réel</span> L'édition réelle annoncée du festival&nbsp;: 17–20 juin 2027, Clisson. Notre nuit inventée est distincte de cette édition officielle.</li>
+        </ul>
+      </article>
+
+      <article class="guide-card reveal" aria-labelledby="g-agenda">
+        <h3 id="g-agenda">La nuit heure par heure <span class="badge badge-fiction">Fictif</span></h3>
+        <table class="agenda-table">
+          <caption class="sr-only">Déroulé fictif de la nuit d'éveil</caption>
+          <thead><tr><th scope="col">Heure</th><th scope="col">Moment</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">19h00</th><td>Ouverture des portes — remise de la braise froide à chaque arrivant</td></tr>
+            <tr><th scope="row">20h00</th><td>Allumage des dix-neuf feux des millésimes, un par scène traversée</td></tr>
+            <tr><th scope="row">21h30</th><td>Procession sonore&nbsp;: la foule descend vers le Cœur de Braise</td></tr>
+            <tr><th scope="row">00h30</th><td>Le 20<sup>e</sup> feu — la Flamme Commune, nourrie par le public</td></tr>
+            <tr><th scope="row">01h00</th><td>Fin de la nuit d'éveil — les feux veillent jusqu'au matin</td></tr>
+          </tbody>
+        </table>
+      </article>
+
+      <article class="guide-card reveal" aria-labelledby="g-scenes">
+        <h3 id="g-scenes">Les six scènes <span class="badge badge-real">Réel (rôles indicatifs)</span></h3>
+        <ul class="scene-list">
+          <li><strong>Main Stage 1 &amp; 2</strong> — les grandes scènes en plein air, têtes d'affiche.</li>
+          <li><strong>Altar</strong> — le royaume du black et du death metal.</li>
+          <li><strong>Temple</strong> — la scène couverte, refuges des sons plus souterrains.</li>
+          <li><strong>Warzone</strong> — punk, hardcore et énergie brute.</li>
+          <li><strong>The Valley</strong> — doom, stoner et atmosphères lourdes.</li>
+        </ul>
+        <p class="fact-note">Noms et vocations&nbsp;: connaissance issue de sources publiques (non vérifiables aujourd'hui sur la page d'accueil officielle, qui ne les liste pas).</p>
+      </article>
+
+      <article class="guide-card guide-tickets reveal" aria-labelledby="g-tickets">
+        <h3 id="g-tickets">Billetterie <span class="badge badge-sim">Simulation</span></h3>
+        <p class="sim-warning">Aucune transaction réelle. Aucune donnée personnelle collectée. Ceci est une démonstration d'interface, sans paiement ni serveur.</p>
+        <div class="ticket-grid">
+          <div class="ticket">
+            <h4>La Braise</h4>
+            <p class="ticket-price">21 € <span class="ticket-note">(prix symbolique inventé)</span></p>
+            <ul><li>Accès à la nuit d'éveil</li><li>Votre sceau gravé à l'entrée</li></ul>
+            <button class="btn btn-primary ticket-buy" data-pass="La Braise">Réserver (simulation)</button>
+          </div>
+          <div class="ticket">
+            <h4>La Meute</h4>
+            <p class="ticket-price">69 € <span class="ticket-note">(4 places, inventé)</span></p>
+            <ul><li>4 entrées pour la nuit</li><li>4 braises de départ</li></ul>
+            <button class="btn btn-primary ticket-buy" data-pass="La Meute">Réserver (simulation)</button>
+          </div>
+        </div>
+        <p class="fact-note">La billetterie réelle du festival est un tout autre circuit (vente officielle sur le site de l'organisation — voir encadré ci-dessous). Notre pass fictif « 21 € » n'existe pas.</p>
+      </article>
+
+      <article class="guide-card reveal" aria-labelledby="g-venue">
+        <h3 id="g-venue">Venir à Clisson</h3>
+        <ul class="fact-list">
+          <li><span class="badge badge-real">Réel (général)</span> Clisson se situe en Loire-Atlantique, au sud-est de Nantes, et dispose d'une gare ferroviaire. Vérifiez toujours les horaires réels auprès des transporteurs.</li>
+          <li><span class="badge badge-fiction">Fictif</span> Pour la nuit d'éveil&nbsp;: navettes imaginaires « Braises Express » toutes les 20 minutes à partir de 17h.</li>
+        </ul>
+      </article>
+
+      <article class="guide-card reveal" aria-labelledby="g-access">
+        <h3 id="g-access">Accessibilité</h3>
+        <ul class="fact-list">
+          <li><span class="badge badge-real">Réel</span> Le site officiel du festival comporte une section « RSO — Accessibilité »&nbsp;: l'organisation traite publiquement ce sujet.</li>
+          <li><span class="badge badge-fiction">Fictif</span> Pour la nuit inventée&nbsp;: plateforme surélevée au Cœur de Braise, équipes de médiation formées, parcours apaisé à l'écart des foules.</li>
+          <li><span class="badge badge-sim">Prototype</span> Ce site lui-même&nbsp;: navigation clavier complète, contrastes renforcés, alternative sans animation (préférence « réduit les animations » respectée), son désactivé par défaut.</li>
+        </ul>
+      </article>
+
+      <article class="guide-card reveal" aria-labelledby="g-faq">
+        <h3 id="g-faq">FAQ (réponses fictives)</h3>
+        <dl class="faq">
+          <dt>La nuit d'éveil existe-t-elle vraiment&nbsp;?</dt><dd>Non. « Le 20e Feu » est une fiction créative imaginée pour ce prototype. Aucun événement réel n'est annoncé ici.</dd>
+          <dt>Puis-je vraiment acheter un pass à 21&nbsp;€&nbsp;?</dt><dd>Non. Les boutons de réservation sont des simulations locales, sans paiement ni collecte de données.</dd>
+          <dt>Et le vrai festival de 2027&nbsp;?</dt><dd>Le site officiel annonce une édition réelle du 17 au 20 juin 2027 à Clisson. Consultez-le pour tout ce qui est réel — nos liens le séparent clairement de la fiction.</dd>
+          <dt>Pourquoi des groupes au nom étrange&nbsp;?</dt><dd>Ils sont entièrement inventés (et signalés) pour éviter d'associer de vrais artistes à une fiction.</dd>
+          <dt>Ce site est-il lié aux organisateurs&nbsp;?</dt><dd>Aucunement. Concept indépendant et non officiel, réalisé comme exercice créatif.</dd>
+        </dl>
+      </article>
+
+      <article class="guide-card guide-official reveal" aria-labelledby="g-official">
+        <h3 id="g-official">La réalité, en dehors de la fiction</h3>
+        <p>Ce prototype est indépendant. Pour le festival réel, ses dates, sa billetterie et ses engagements&nbsp;:</p>
+        <ul class="official-links">
+          <li><a href="https://www.hellfest.fr" target="_blank" rel="noopener noreferrer">Site officiel du Hellfest (réel) <span aria-hidden="true">↗</span></a></li>
+        </ul>
+        <p class="fact-note">Lien externe distinct de la fiction&nbsp;: il mène au site de l'organisation réelle, qui ne participe d'aucune façon à ce concept.</p>
+      </article>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p class="ribbon ribbon-footer">Concept indépendant et non officiel. Édition anniversaire 2027 entièrement fictive.</p>
+  <p>« Le 20<sup>e</sup> Feu — Nuit d'Éveil » — prototype expérientiel réalisé le 27 octobre 2026 comme exercice créatif indépendant, autour de l'univers du Hellfest. Aucune affiliation, aucun commanditaire. Les éléments réels cités (dates du festival réel, noms de scènes, section accessibilité officielle) proviennent de sources publiques consultées le 27 octobre 2026&nbsp;; tout le reste — événement, programmation, récits, prix — est inventé et étiqueté comme tel.</p>
+  <p class="footer-tech">Aucune donnée personnelle collectée · Aucune transaction réelle · Son désactivé par défaut · Animations réduites si votre système le demande.</p>
+</footer>
+
+<!-- Modal de réservation simulée -->
+<div class="modal" id="ticketModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+  <div class="modal-box">
+    <h3 id="modalTitle">Réservation simulée</h3>
+    <p id="modalText"></p>
+    <p class="sim-warning">Ceci est une démonstration d'interface&nbsp;: aucune transaction réelle, aucune donnée envoyée ni conservée sur un serveur.</p>
+    <button class="btn btn-primary" id="modalClose">Compris</button>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
